@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <!-- Страница с аккордеоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./accordion.css" />
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .wrapper {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="accordeon">
+        <details class="accordeon__item">
+          <summary class="accordeon__title">Accordion item</summary>
+          <div class="accordeon__content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
+            quod eius beatae culpa eum. Eveniet, quis eius quo distinctio
+            aliquid rerum quae laudantium repellendus fugit, accusantium soluta
+            eligendi odio sed numquam qui, natus voluptatem dolore quaerat
+            officiis commodi mollitia. Amet, mollitia temporibus suscipit odio a
+            earum soluta id praesentium beatae, et vitae, aliquid natus cum
+            porro aspernatur. Corporis dolorum, eius dignissimos porro deleniti,
+            consequuntur voluptatibus excepturi sit debitis molestiae voluptate
+            tenetur.
+          </div>
         </details>
-    </body>
+
+        <details class="accordeon__item">
+          <summary class="accordeon__title">Accordion item</summary>
+          <div class="accordeon__content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
+            quod eius beatae culpa eum. Eveniet, quis eius quo distinctio
+            aliquid rerum quae laudantium repellendus fugit, accusantium soluta
+            eligendi odio sed numquam qui, natus voluptatem dolore quaerat
+            officiis commodi mollitia. Amet, mollitia temporibus suscipit odio a
+            earum soluta id praesentium beatae, et vitae, aliquid natus cum
+            porro aspernatur. Corporis dolorum, eius dignissimos porro deleniti,
+            consequuntur voluptatibus excepturi sit debitis molestiae voluptate
+            tenetur.
+          </div>
+        </details>
+
+        <details class="accordeon__item">
+          <summary class="accordeon__title">Accordion item</summary>
+          <div class="accordeon__content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
+            quod eius beatae culpa eum. Eveniet, quis eius quo distinctio
+            aliquid rerum quae laudantium repellendus fugit, accusantium soluta
+            eligendi odio sed numquam qui, natus voluptatem dolore quaerat
+            officiis commodi mollitia. Amet, mollitia temporibus suscipit odio a
+            earum soluta id praesentium beatae, et vitae, aliquid natus cum
+            porro aspernatur. Corporis dolorum, eius dignissimos porro deleniti,
+            consequuntur voluptatibus excepturi sit debitis molestiae voluptate
+            tenetur.
+          </div>
+        </details>
+      </div>
+    </div>
+  </body>
 </html>
