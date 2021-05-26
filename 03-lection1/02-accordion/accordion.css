@@ -1,1 +1,46 @@
 /* Стилизация аккордеона */
+
+.accordeon {
+  width: 100%;
+}
+
+.accordeon__item {
+  margin-bottom: 8px;
+  padding: 24px 32px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  font: 16px/24px 'Inter', sans-serif;
+}
+
+.accordeon__item:last-child {
+  margin-bottom: 0;
+}
+
+.accordeon__item[open] > .accordeon__title {
+  margin-bottom: 16px;
+}
+
+.accordeon__title::-webkit-details-marker {
+  display: none;
+}
+.accordeon__title {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: var(--black);
+  font: inherit;
+}
+
+.accordeon__title::after {
+  content: url('toggler.svg');
+  transition: transform 0.2s;
+}
+
+.accordeon__item[open] > .accordeon__title::after {
+  transform: rotate(180deg);
+}
+
+.accordeon__content {
+  color: var(--grey-4);
+  font: inherit;
+}
