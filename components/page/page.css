@@ -1,0 +1,16 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page__box {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.page__main {
+  flex-grow: 1;
+  background-color: #f9fafc;
+  padding: 68px 0;
+}
