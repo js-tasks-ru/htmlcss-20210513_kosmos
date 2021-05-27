@@ -1,0 +1,10 @@
+.preview {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 30px;
+}
+
+.preview__card {
+  background-color: var(--white);
+  min-height: 350px;
+}
